@@ -1,42 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Writing SVG Animation</title>
 
-    <style>
-      :root {
-        --animation-length: 2s;
-      }
-      #letters {
-        stroke-dasharray: 758;
-        stroke-dashoffset: 758;
-        animation: sign var(--animation-length) ease forwards infinite;
-      }
-      #dot {
-        opacity: 1;
-        animation: dot var(--animation-length) ease forwards infinite;
-      }
-
-      @keyframes sign {
-        to {
-          stroke-dashoffset: 0;
-        }
-      }
-
-      @keyframes dot {
-        0% {
-          opacity: 0;
-        }
-
-        90% {
-          opacity: 1;
-        }
-      }
-    </style>
-  </head>
+    
   <body>
     <svg
       width="297"
@@ -65,4 +28,3 @@
     </svg>
     This is Me
   </body>
-</html>
